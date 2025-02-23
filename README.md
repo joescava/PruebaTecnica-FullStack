@@ -25,29 +25,30 @@ Este proyecto es una **prueba técnica** que evalúa habilidades en **Django** y
 
 ## **Estructura del Proyecto**
 
-📂 PruebaTecnica-FullStack
-│── 📄 README.md               # Documentación del proyecto
-│── 📄 requirements.txt         # Dependencias del backend
-│── 📂 backend/                 # Backend en Django
-│   │── 📄 manage.py            # Script principal de Django
-│   │── 📂 django_app/          # Configuración del proyecto Django
-│   │── 📂 app_validacion/      # Aplicación principal del backend
-│   │   │── 📄 models.py        # Modelos de la base de datos
-│   │   │── 📄 views.py         # Vistas de la API
-│   │   │── 📄 urls.py          # Rutas de la API
-│   │   │── 📄 utils.py         # Funciones auxiliares
-│   │   │── 📂 templates/       # Archivos HTML del backend
-│   │   └── 📂 migrations/      # Migraciones de la base de datos
-│   │── 📂 scripts/             # Scripts de procesamiento de PDF
-│   │   │── 📄 extract_cufe.py  # Script para extraer CUFE de PDFs
-│   │── 📂 static/              # Archivos estáticos del backend
-│   │   │── 📄 cufe_data.db     # Base de datos SQLite
-│   │── 📄 requirements.txt     # Dependencias del backend
-│
-│── 📂 frontend/                # Frontend en HTML, CSS y JavaScript
-│   │── 📄 index.html           # Interfaz principal
-│   │── 📄 app.js               # Lógica de frontend
-│   │── 📄 styles.css           # Estilos CSS
+| Carpeta/ Archivo |	Descripción |
+|---------|------------|
+|PruebaTecnica-FullStack/ | Carpeta principal del proyecto
+├── 📄 README.md | Documentación del proyecto
+├── 📄 requirements.txt | Dependencias del backend
+├── 📂 backend/	Backend | desarrollado en Django
+│   ├── 📄 manage.py | Script principal de Django
+│   ├── 📂 django_app/ | Configuración del proyecto Django
+│   ├── 📂 app_validacion/ | Aplicación principal del backend
+│   │   ├── 📄 models.py | Modelos de la base de datos
+│   │   ├── 📄 views.py | Vistas de la API
+│   │   ├── 📄 urls.py | Rutas de la API
+│   │   ├── 📄 utils.py | Funciones auxiliares
+│   │   ├── 📂 templates/ | Archivos HTML del backend
+│   │   └── 📂 migrations/ | Migraciones de la base de datos
+│   ├── 📂 scripts/ | Scripts de procesamiento de PDF
+│   │   ├── 📄 extract_cufe.py | Script para extraer CUFE de PDFs
+│   ├── 📂 static/ | Archivos estáticos del backend
+│   │   ├── 📄 cufe_data.db | Base de datos SQLite
+│   ├── 📄 requirements.txt | Dependencias del backend
+├── 📂 frontend/ | Frontend en HTML, CSS y JavaScript
+│   ├── 📄 index.html | Interfaz principal
+│   ├── 📄 app.js | Lógica de frontend
+│   ├── 📄 styles.css | Estilos CSS
 
 ## **Validación de Archivos**
 
@@ -64,7 +65,7 @@ Si hay errores, se muestran en la interfaz web.
 |**Monto** | Entre 500,000 y 1,500,000 |
 |**Cualquier Valor** | Se permite cualquier dato |
 
-### ** Pasos para probar**
+### **Pasos para probar**
 1. Subir un archivo txt desde el **frontend**.
 2. Se validará su contenido en el **backend**.
 3. Se mostrará un mensaje de **éxito o errores detallados**.
