@@ -25,44 +25,29 @@ Este proyecto es una **prueba técnica** que evalúa habilidades en **Django** y
 
 ## **Estructura del Proyecto**
 
-PRUEBA_FULLSTACK
-│── backend/                  # Backend con Django
-│   ├── app_validacion/       # Aplicación principal
-│   │   ├── migrations/       # Migraciones de la BD
-│   │   ├── templates/        
-│   │   ├── init.py
-│   │   ├── admin.py
-│   │   ├── apps.py
-│   │   ├── forms.py
-│   │   ├── models.py         # Modelos de la base de datos
-│   │   ├── tests.py
-│   │   ├── urls.py           # Rutas del backend
-│   │   ├── utils.py
-│   │   ├── views.py          # Lógica de la API
-│   │
-│   ├── django_app/           # Configuración de Django
-│   │   ├── settings.py       # Configuración general
-│   │   ├── urls.py           # Rutas principales
-│   │   ├── wsgi.py
-│   │   ├── asgi.py
-│   │
-│   ├── scripts/              # Scripts auxiliares
-│   │   ├── extract_cufe.py   # Extrae el CUFE desde PDFs
-│   │
-│   ├── static/               # Archivos estáticos
-│   ├── db.sqlite3            # Base de datos SQLite
-│   ├── manage.py             # Script principal de Django
-│   ├── requirements.txt      # Dependencias del backend
+📂 PruebaTecnica-FullStack
+│── 📄 README.md               # Documentación del proyecto
+│── 📄 requirements.txt         # Dependencias del backend
+│── 📂 backend/                 # Backend en Django
+│   │── 📄 manage.py            # Script principal de Django
+│   │── 📂 django_app/          # Configuración del proyecto Django
+│   │── 📂 app_validacion/      # Aplicación principal del backend
+│   │   │── 📄 models.py        # Modelos de la base de datos
+│   │   │── 📄 views.py         # Vistas de la API
+│   │   │── 📄 urls.py          # Rutas de la API
+│   │   │── 📄 utils.py         # Funciones auxiliares
+│   │   │── 📂 templates/       # Archivos HTML del backend
+│   │   └── 📂 migrations/      # Migraciones de la base de datos
+│   │── 📂 scripts/             # Scripts de procesamiento de PDF
+│   │   │── 📄 extract_cufe.py  # Script para extraer CUFE de PDFs
+│   │── 📂 static/              # Archivos estáticos del backend
+│   │   │── 📄 cufe_data.db     # Base de datos SQLite
+│   │── 📄 requirements.txt     # Dependencias del backend
 │
-│── frontend/                 # Código del frontend
-│   ├── app.js                # Lógica del frontend
-│   ├── index.html            # Página principal
-│   ├── styles.css            # Estilos CSS
-│
-│── .gitignore                # Archivos a ignorar en Git
-│── README.md                 # Documentación del proyecto
-
----
+│── 📂 frontend/                # Frontend en HTML, CSS y JavaScript
+│   │── 📄 index.html           # Interfaz principal
+│   │── 📄 app.js               # Lógica de frontend
+│   │── 📄 styles.css           # Estilos CSS
 
 ## **Validación de Archivos**
 
@@ -108,15 +93,17 @@ Los datos se guardan en **SQLite**.
 ## **Instalación y Configuración**
 ### **1 Clonar el repositorio**
 ```sh
-git clone https://github.com/joescava/prueba_fullstack.git
-cd prueba_fullstack
+git clone https://github.com/joescava/PruebaTecnica-FullStack.git
+cd PruebaTecnica-FullStack
 
 Configurar el Backend (Django)
 	1.	Activar un entorno virtual en Python:
 
-    python -m venv .venv
-    source .venv/bin/activate   # Mac/Linux
-    .venv\Scripts\activate      # Windows
+    cd backend
+    python -m venv venv  # Crear entorno virtual
+    source venv/bin/activate  # Activar entorno en macOS/Linux
+    # En Windows usa: venv\Scripts\activate
+    pip install -r requirements.txt  # Instalar dependencias
 
     2.	Instalar dependencias:
 
@@ -128,7 +115,8 @@ Configurar el Backend (Django)
 
     4.	Ejecutar el servidor:
 
-    python manage.py runserver
+    python manage.py migrate  # Aplicar migraciones
+    python manage.py runserver  # Iniciar servidor en http://127.0.0.1:8000
 
 Accede al backend en http://127.0.0.1:8000
 
@@ -155,6 +143,7 @@ Requerimientos Técnicos
 	•	Django 5.1.6
 	•	SQLite (viene incluido con Python)
 	•	PyPDF2 para extraer texto de PDFs
+    •	Se debe activar el entorno virtual antes de ejecutar Django.
 Cómo Reiniciar la Base de Datos
     Si necesitas limpiar la base de datos, ejecuta:
         rm backend/static/cufe_data.db  # Elimina la base de datos
