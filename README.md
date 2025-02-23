@@ -135,10 +135,13 @@ Uso de la Aplicación
 Ver facturas procesadas
 	•	Se pueden visualizar en un modal en el frontend.
 API Endpoints
-    Método	URL	                        Descripción
-    POST	/api/upload/	            Subir y validar archivos TXT
-    POST	/api/upload-pdf/	        Subir facturas en PDF y extraer CUFE
-    GET	    /api/listar-facturas/	    Obtener todas las facturas almacenadas
+
+| Método | URL | Descripción |
+|---------|------------|------------|
+| POST | /api/upload/ | Subir y validar archivos TXT |
+| POST | /api/upload-pdf/ | Subir facturas en PDF y extraer CUFE |
+| GET | /api/listar-facturas/ | Obtener todas las facturas almacenadas |
+
 Requerimientos Técnicos
 	•	Python 3.13 o superior
 	•	Django 5.1.6
