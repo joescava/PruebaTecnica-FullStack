@@ -28,27 +28,27 @@ Este proyecto es una **prueba técnica** que evalúa habilidades en **Django** y
 | Carpeta/ Archivo |	Descripción |
 |---------|------------|
 |PruebaTecnica-FullStack/ | Carpeta principal del proyecto
-├── 📄 README.md | Documentación del proyecto
-├── 📄 requirements.txt | Dependencias del backend
-├── 📂 backend/	Backend | desarrollado en Django
-│   ├── 📄 manage.py | Script principal de Django
-│   ├── 📂 django_app/ | Configuración del proyecto Django
-│   ├── 📂 app_validacion/ | Aplicación principal del backend
-│   │   ├── 📄 models.py | Modelos de la base de datos
-│   │   ├── 📄 views.py | Vistas de la API
-│   │   ├── 📄 urls.py | Rutas de la API
-│   │   ├── 📄 utils.py | Funciones auxiliares
-│   │   ├── 📂 templates/ | Archivos HTML del backend
-│   │   └── 📂 migrations/ | Migraciones de la base de datos
-│   ├── 📂 scripts/ | Scripts de procesamiento de PDF
-│   │   ├── 📄 extract_cufe.py | Script para extraer CUFE de PDFs
-│   ├── 📂 static/ | Archivos estáticos del backend
-│   │   ├── 📄 cufe_data.db | Base de datos SQLite
-│   ├── 📄 requirements.txt | Dependencias del backend
-├── 📂 frontend/ | Frontend en HTML, CSS y JavaScript
-│   ├── 📄 index.html | Interfaz principal
-│   ├── 📄 app.js | Lógica de frontend
-│   ├── 📄 styles.css | Estilos CSS
+├── README.md | Documentación del proyecto
+├── requirements.txt | Dependencias del backend
+├── backend/	Backend | desarrollado en Django
+│   ├── manage.py | Script principal de Django
+│   ├── django_app/ | Configuración del proyecto Django
+│   ├── app_validacion/ | Aplicación principal del backend
+│   │   ├── models.py | Modelos de la base de datos
+│   │   ├── views.py | Vistas de la API
+│   │   ├── urls.py | Rutas de la API
+│   │   ├── templates/ | Archivos HTML del backend
+│   │   ├── utils.py | Funciones auxiliares
+│   │   └── migrations/ | Migraciones de la base de datos
+│   ├── scripts/ | Scripts de procesamiento de PDF
+│   │   ├── extract_cufe.py | Script para extraer CUFE de PDFs
+│   ├── static/ | Archivos estáticos del backend
+│   │   ├── cufe_data.db | Base de datos SQLite
+│   ├── requirements.txt | Dependencias del backend
+├── frontend/ | Frontend en HTML, CSS y JavaScript
+│   ├── index.html | Interfaz principal
+│   ├── app.js | Lógica de frontend
+│   ├── styles.css | Estilos CSS
 
 ## **Validación de Archivos**
 
