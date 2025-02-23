@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Técnica - Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Prueba Técnica - Full Stack</h1>
+
+        <section class="section">
+            <h2>Validación de Estructura de Archivos</h2>
+            <input type="file" id="csvFileInput" accept=".txt">
+            <button id="uploadCsvBtn">Subir Archivo</button>
+            <p id="csvResult"></p>
+        </section>
+
+        <section class="section">
+            <h2>Subir Facturas en PDF</h2>
+            <input type="file" id="pdfFileInput" accept=".pdf" multiple>
+            <button id="uploadPdfBtn">Subir Facturas y Ejecutar Extracción CUFE PDFs </button>
+            <p id="pdfResult"></p>
+        </section>
+
+        <section class="section">
+            <h2>Facturas</h2>
+            <button id="fetchInvoicesBtn">Ver Facturas Guardadas</button>
+        </section>
+    </div>
+
+    <!-- Modales -->
+    <div id="errorModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Errores en la Validación</h2>
+            <div class="table-container">
+                <table id="errorTable">
+                    <thead>
+                        <tr>
+                            <th>Fila</th>
+                            <th>Columna 1</th>
+                            <th>Columna 2</th>
+                            <th>Columna 3</th>
+                            <th>Columna 4</th>
+                            <th>Columna 5</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="successModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close success-close">&times;</span>
+            <h2>Validación Exitosa</h2>
+            <p>El archivo se validó correctamente y cumple con todos los requisitos.</p>
+        </div>
+    </div>
+
+    <div id="pdfModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Detalles de las Facturas Procesadas</h2>
+            <div class="table-container">
+                <table id="pdfTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre del Archivo</th>
+                            <th>Número de Páginas</th>
+                            <th>CUFE</th>
+                            <th>Peso del Archivo</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

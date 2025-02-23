@@ -1,0 +1,9 @@
+asgiref==3.8.1
+Django==5.1.6
+django-cors-headers==4.7.0
+flake8==7.1.2
+mccabe==0.7.0
+pycodestyle==2.12.1
+pyflakes==3.2.0
+PyPDF2==3.0.1
+sqlparse==0.5.3

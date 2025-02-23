@@ -1,0 +1,18 @@
+# Entorno virtual
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Archivos de base de datos locales
+backend/db.sqlite3
+
+# Archivos de logs
+*.log
+
+# Ignorar configuración de PyCharm
+.idea/
+*.iml
+*.xml
